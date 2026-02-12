@@ -1,5 +1,5 @@
 # =============================================================
-# TEMPLATE: Download Files from the SpaSES Google Drive
+# Download Files from the Pollinator Commons Google Drive
 # =============================================================
 
 # Load Required Packages
@@ -20,7 +20,7 @@ drive_auth()
 # want to download files from.
 # The folder ID is the part of the Google Drive URL that looks like:
 # https://drive.google.com/drive/folders/<Folder ID>?usp=drive_link
-gd_data_original <- "YOUR_FOLDER_ID_HERE"
+gd_data_original <- "1bozXhlXKrqQ3uy5IYGdWDLsmzRQ_YXzK"  #Bee_IDs
 gd_data_processed <- "YOUR_FOLDER_ID_HERE"
 gd_data_final <- "YOUR_FOLDER_ID_HERE"
 gd_outputs_test <- "YOUR_FOLDER_ID_HERE"
@@ -30,7 +30,7 @@ gd_docs_final <- "YOUR_FOLDER_ID_HERE"
 
 # Replace 'gd_FOLDER_OBJECT_NAME_HERE' with the folder's object name (e.g. gd_data_final)
 # that you want to download files from.
-gd_folder_id <- gd_FOLDER_OBJECT_NAME_HERE
+gd_folder_id <- gd_data_original
 
 # Retrieve the folder information using the folder ID
 gd_folder <- drive_get(as_id(gd_folder_id))
@@ -55,7 +55,8 @@ ld_docs_final <- "docs/final"
 
 # Replace 'ld_FOLDER_OBJECT_NAME_HERE' with the folder's object name (e.g. ld_data_final)
 # that you want to upload the files to.
-ld_folder_path <- ld_FOLDER_OBJECT_NAME_HERE
+#ld_folder_path <- ld_FOLDER_OBJECT_NAME_HERE
+ld_folder_path <- ld_data_original
 
 # STEP 5: Download Files to a Local Directory
 # -------------------------------------------------------------
